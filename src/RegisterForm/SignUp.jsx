@@ -1,10 +1,12 @@
-import * as React from 'react'
+import  * as React from 'react'
+import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/icons-material/Typography'
 import Link from '@mui/material/Link'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Container from '@mui/material/Container'
 import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 
     function Copyright(props){
@@ -43,7 +45,12 @@ import Box from '@mui/material/Box'
                                 alignItems: 'center',
                             }}
                             >
-
+                                <Avatar sx={{ m: 2, bgcolor: 'secondary.mains' }}>
+                                <LockOutlinedIcon />
+                                </Avatar>
+                                <Typography component='h2' variant='h5'>
+                                    Sign Up
+                                </Typography>
                             </Box>
                         </Container>
                     </ThemeProvider>
