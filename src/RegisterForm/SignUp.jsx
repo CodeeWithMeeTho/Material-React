@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Typography from '@mui/icons-material/Typography'
 import Link from '@mui/material/Link'
-
+import { createTheme } from '@mui/material/styles'
 
     function Copyright(props){
         return (
@@ -15,3 +15,18 @@ import Link from '@mui/material/Link'
             </Typography>
         )
     }
+
+    const theme = createTheme()
+
+        export default function SignUp() {
+            const handleSubmit =(e) => {
+                e.preventDefault()
+                const data = new FormData(e.currentTarget)
+                console.log({
+                    email: data.get('email'),
+                    password: data.get('password'),
+                })
+            }
+            
+        }
+        
